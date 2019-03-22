@@ -26,9 +26,8 @@ it 'Returns error-message if not an integer' do
     expect(fizz_buzz('stefan')).to eq "Please, enter a number!"
 end
 
-# it 'Checks if Fizz Buzz Method to loop numbers/words exist' do
-# expect(fizz_buzz_loop.to respond_to(:fizz_buzz_loop)
-# end
-
+it 'Checks if Fizz Buzz Loop method exists' do
+expect(fizz_buzz_loop()).to eq nil
 end
 
+end
