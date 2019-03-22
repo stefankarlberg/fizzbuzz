@@ -12,6 +12,8 @@ def fizz_buzz(number)
                 'buzz'
             elsif number % 3 == 0
                 'fizz'
+            else
+                number
             end
         
         else 
@@ -20,3 +22,4 @@ def fizz_buzz(number)
         
     end
 end
+
