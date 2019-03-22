@@ -5,24 +5,29 @@ def fizz_buzz(number)
     chk_number = number.to_s.match(/\A[+-]?\d+?(\.\d+)?\Z/) == nil ? false : true      
     
     if chk_number == true    
-            if number % 15 == 0
+            if has_zero_remainder?(number, 15)
                 "fizzbuzz"
-            elsif number % 5 == 0 
+            elsif has_zero_remainder?(number, 5)
                 'buzz'
-            elsif number % 3 == 0
+            elsif has_zero_remainder?(number, 3)
                 'fizz'
             else
                 number
             end
+
         else 
             "Please, enter a number!"  
     end
 end
 
+def has_zero_remainder?(number, divider)
+    number % divider == 0
+end
+
 
 # The FizzBuzz Lopp
 
-def fizz_buzz_loop
+def fizz_buzz_loop()
     
     number = 1
     while number <= 100 
