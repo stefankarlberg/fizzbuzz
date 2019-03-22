@@ -18,7 +18,9 @@ it 'returns "fizz" if number is divisible by 3' do
     expect(fizz_buzz(3)).to eq "fizz"
 end
 
-
+it 'Returns error-message if not an integer' do
+    expect(fizz_buzz('stefan')).to eq "Please, enter a number!"
+end
 
 
 
